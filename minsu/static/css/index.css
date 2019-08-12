@@ -1,0 +1,48 @@
+body,
+h3,
+h4,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.discount {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.city {
+    list-style: none;
+    width: 1040px;
+}
+
+.city li {
+    float: left;
+}
+
+.city li:not(:first-child) {
+    margin-left: 10px;
+}
+
+.city li span {
+    display: block;
+    width: 120px;
+    height: 48px;
+    color: #484848;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 3px;
+    border: solid 0.5px #d8d8d8;
+    text-align: center;
+    line-height: 48px;
+}
+
+.city li :hover {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.details {
+    width: 350px;
+    height: 355px;
+}
