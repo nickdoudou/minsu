@@ -1,0 +1,32 @@
+*{margin: 0px;padding: 0px;}
+/*头部*/
+.head{
+    width: 1920px;
+    height: 80px;
+    background: #00848A;
+    
+}
+.headr{
+    width: 1231px;
+    height: 80px;
+   position: relative;
+   left: 50px;
+}
+.nav{
+    width: 576px;
+    height: 60px;
+    position: absolute;
+    left: 1100px;
+}
+.nav li{
+    float: right;
+    list-style: none;
+    padding: 10px;
+    color: white;
+}
+.nva a {
+    text-decoration: none;
+}
+.nva li:hover{
+    color: #00848A;
+}
