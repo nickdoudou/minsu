@@ -1,15 +1,22 @@
-body,
-h3,
-h4,
-ul,
-li {
-    margin: 0;
-    padding: 0;
-}
-
-.discount {
+.container {
     width: 1080px;
     margin: 0 auto;
+}
+
+
+/* 一楼优惠样式 */
+
+.discount {
+    width: 100%;
+}
+
+
+/* 城市样式 */
+
+#city:after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .city {
@@ -17,15 +24,20 @@ li {
     width: 1040px;
 }
 
-.city li {
+.city div {
     float: left;
+    padding: 16px 8px
 }
 
-.city li:not(:first-child) {
+.city div:not(:first-child) {
     margin-left: 10px;
 }
 
-.city li span {
+.city div:first-child {
+    padding-left: 0;
+}
+
+.city div span {
     display: block;
     width: 120px;
     height: 48px;
@@ -38,11 +50,86 @@ li {
     line-height: 48px;
 }
 
-.city li :hover {
+
+/* 鼠标移入样式 */
+
+.city div :hover {
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
 }
 
+
+/* 详情样式 */
+
 .details {
+    display: flex;
+    flex-wrap: wrap-reverse
+}
+
+.describe {
     width: 350px;
     height: 355px;
+    padding: 5px;
+}
+
+.details_img {
+    width: 100%;
+    background-repeat: no-repeat;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.title a,
+.room_count {
+    color: #484848;
+}
+
+.price {
+    color: #484848;
+    font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC";
+}
+
+.price span:first-child {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.price span:nth-child(2) {
+    text-decoration: line-through;
+}
+
+.price span:not(:first-child) {
+    font-size: 14px;
+}
+
+.praise {
+    line-height: normal;
+    max-height: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.praise span:first-child {
+    height: 9px;
+    width: 50px;
+    display: inline-block;
+    background-size: auto 9px;
+    background-repeat: no-repeat;
+    background-image: url(../../pubulic/image/星星.png)
+}
+
+.praise span:not(:first-child) {
+    color: #484848;
+    margin: 0px;
+    word-wrap: break-word;
+    font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC";
+    font-size: 12px;
+    line-height: 1.33333em;
+    font-weight: 600;
+}
+
+.more {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #008489;
 }
