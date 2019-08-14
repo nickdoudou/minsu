@@ -8,12 +8,22 @@
 
 .discount {
     width: 100%;
+    margin-top: 40px;
+}
+
+.title_bar {
+    font-size: 24px;
+}
+
+.sub_title {
+    font-size: 16px;
 }
 
 
 /* 城市样式 */
 
 #city:after {
+    /*解决浮动引起的高度坍塌*/
     content: "";
     display: block;
     clear: both;
@@ -26,6 +36,7 @@
 
 .city div {
     float: left;
+    /*浮动*/
     padding: 16px 8px
 }
 
@@ -62,13 +73,14 @@
 
 .details {
     display: flex;
-    flex-wrap: wrap-reverse
+    flex-wrap: wrap-reverse;
 }
 
 .describe {
     width: 350px;
     height: 355px;
     padding: 5px;
+    margin-top: 10px;
 }
 
 .details_img {
@@ -78,9 +90,15 @@
     border-top-right-radius: 3px;
 }
 
-.title a,
-.room_count {
+.room_count a {
     color: #484848;
+    font-size: 12px;
+}
+
+.title a {
+    color: #484848;
+    font-weight: 800;
+    font-size: 16px;
 }
 
 .price {
@@ -132,4 +150,25 @@
     font-weight: 600;
     line-height: 22px;
     color: #008489;
+}
+
+
+/* 二楼 */
+
+.title_desc a {
+    font-size: 14px;
+    color: #484848;
+}
+
+.desc {
+    width: 262px;
+    height: 325px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.desc_img {
+    width: 100%;
+    background-repeat: no-repeat;
+    border-radius: 3px;
 }
