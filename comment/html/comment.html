@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/comment.css">
+</head>
+<body>
+  <!-- 用整个ul包裹着发表的说说 图片  以及别人的回复 -->
+  <ul id="pn">
+    <!-- !-- 用ul里面的li包裹着发表的说说 图片  以及别人的回复 -->
+    <li class="list0"> 
+      <!-- 用于删除整个发表的或者展示的东西 -->
+      <a class="close" href="javascript:;">X</a>
+
+        <div class="head">
+          <img src="http://www.sucainiu.com/themes/images/demo/500x300-2.png" alt="">
+        </div>
+
+        <div class="content">
+            <p class="text">
+              <span class="name">Andy：</span>哈哈哈哈哈
+            </p>
+            <div class="pic">
+              <img src="../img/house.jpg" alt="">
+            </div>
+            <div class="good">
+              <span class="date">02-14 23:01</span><a class="dzan" href="javascript:;">赞</a>
+            </div>
+
+            <div class="people" total="2980">2980人觉得很赞</div>
+
+            <div class="comment-list">
+                <div class="comment" user="self">
+                    <div class="comment-left"><img src="../img/house.jpg" alt=""></div>
+                    <div class="comment-right">
+                        <div class="comment-text"><span class="user">老王：</span>我</div>
+                        <div class="comment-date">02-14 22:00 <a class="comment-zan" href="javascript:;" total="23" my="1">23 取消赞</a> <a class="comment-dele" href="javascript:;">回复</a> </div>
+                    </div>
+                </div>
+                <div class="comment" user="self">
+                    <div class="comment-left"><img src="http://www.sucainiu.com/themes/images/demo/500x300-2.png" alt=""></div>
+                    <div class="comment-right">
+                        <div class="comment-text"><span class="user">我：</span>看哭了留卡号吧</div>
+                        <div class="comment-date">02-14 24:00 <a class="comment-zan" href="javascript:;" total="0" my="0">赞</a> <a class="comment-dele" href="javascript:;">删除</a> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hf">
+                <textarea type="text" class="hf-text" autocomplete="off" maxlength="100">评论…</textarea>
+                <button class="hf-btn">回复</button>
+                <span class="hf-nub">0/100</span> </div>
+        </div>
+    </li>
+    <li class="list0"> <a class="close" href="javascript:;">X</a>
+        <div class="head"><img src="http://www.sucainiu.com/themes/images/demo/500x300-2.png" alt=""></div>
+        <div class="content">
+            <p class="text"><span class="name">Andy：</span>哈哈哈哈哈谁</p>
+            <div class="pic"><img src="http://www.sucainiu.com/themes/images/demo/500x300-3.png" alt=""></div>
+            <div class="good"><span class="date">02-14 23:01</span><a class="dzan" href="javascript:;">赞</a></div>
+            <div class="people" total="0" style="display: none;"></div>
+            <div class="comment-list">
+                <div class="comment" user="self">
+                    <div class="comment-left"><img src="http://www.sucainiu.com/themes/images/demo/500x300-5.png" alt=""></div>
+                    <div class="comment-right">
+                        <div class="comment-text"><span class="user">我：</span>看哭了留卡号吧</div>
+                        <div class="comment-date">02-14 24:00 <a class="comment-zan" href="javascript:;" total="286" my="1">286 取消赞</a> <a class="comment-dele" href="javascript:;">删除</a> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hf">
+                <textarea type="text" class="hf-text" autocomplete="off" maxlength="100">评论…</textarea>
+                <button class="hf-btn">回复</button>
+                <span class="hf-nub">0/100</span> </div>
+        </div>
+    </li>
+</ul>
+<script src="../js/comment.js"></script>
+</body>
+</html>
