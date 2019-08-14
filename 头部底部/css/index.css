@@ -1,22 +1,33 @@
 *{margin: 0px;padding: 0px;}
 /*头部*/
 .head{
-    width: 1920px;
+    width: 2262px;
     height: 80px;
     background: #00848A;
     
 }
 .headr{
-    width: 1231px;
-    height: 80px;
-   position: relative;
-   left: 50px;
+    position: relative;
+   width: 1231px;
+   height: 80px;
+}
+div.headr input{
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: 0.8em;
+    background-color: transparent;
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: white;
 }
 .nav{
-    width: 576px;
-    height: 60px;
     position: absolute;
+    width: 576px;
+    height: 80px;
     left: 1100px;
+    top: 10px;
+    bottom: 10px;
 }
 .nav li{
     float: right;
@@ -28,5 +39,30 @@
     text-decoration: none;
 }
 .nva li:hover{
-    color: #00848A;
+    border-bottom: 2px;
+}
+/*民宿房间介绍*/
+.room_max{
+    width: 1903px;
+    height: 700px;
+}
+.select{
+    margin: 0 auto;
+    width: 1032px;
+    height: 71px;
+}
+div .select_bg{
+    width: 1032px;
+    height: 48px;
+    margin: 0 auto;
+}
+div .select_bg button{
+    width: 120px;
+    height: 48px;
+    font-size: 17px;
+    color: #484848;
+    font-weight: bold
+}
+.select_text{
+    background: #00848a;
 }
