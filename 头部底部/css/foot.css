@@ -1,0 +1,51 @@
+/*尾部*/
+.foot{
+    width: 1903px;
+    height: 339px;
+}
+.text{
+    margin: 0 auto;
+    width: 1048px;
+    height: 340px;
+}
+.text_bg{
+    width: 158px;
+    height: 203px;
+    float: left;
+    display: flex;
+    padding: 0px 8px;
+    margin: 30px;
+}
+.text_bg li{
+    list-style: none;
+    line-height: 25px;
+}
+.text_bg li:hover{
+    border-bottom: 1px solid #767676;
+}
+.text_bg a{
+    color: #767676;
+    text-decoration: none;
+}
+.text_lg{
+    background: #006a70;
+    border-radius: 5px;
+}
+.text_hg{
+    background: #006a70;
+    border-radius: 5px;
+}
+.line{
+    width: 809px;
+    height: 42px;
+}
+.line_lg p{
+    width: 556px;
+    height: 18px;
+    margin: 0;
+    text-align: center;
+}
+.p_text:hover{
+    border-bottom: 1px solid #767676;
+}
+
