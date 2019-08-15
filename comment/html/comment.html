@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/comment.css">
+</head>
+<body>
+  <!-- 用整个ul包裹着发表的说说 图片  以及别人的回复 -->
+  <ul id="pn">
+    <!-- !-- 用ul里面的li包裹着发表的说说 图片  以及别人的回复 -->
+    <li class="list0"> 
+      <!-- 用于删除整个发表的或者展示的东西 -->
+      <a class="close" href="javascript:;">X</a>
+      <!-- 用户头像 -->
+        <div class="head">
+          <img src="http://www.sucainiu.com/themes/images/demo/500x300-2.png" alt="">
+        </div>
+
+        <div class="content">
+          <!-- 用户发表的文字   固定的-->
+            <p class="text">
+              <span class="name">Andy：</span>哈哈哈哈哈
+            </p>
+            <!-- 用户发表的图片  固定的-->
+            <div class="pic">
+              <img src="../img/house.jpg" alt="">
+            </div>
+            <!-- 言论发表的时间  以及一个赞 -->
+            <div class="good">
+              <span class="date">02-14 23:01</span><a class="dzan" href="javascript:;">赞</a>
+            </div>
+            <!-- 点击图片下的赞时 累加点赞人数-->
+            <div class="people" total="2980">2980人觉得很赞</div>
+            <!-- 评论区列表 -->
+            <div class="comment-list">
+                <div class="comment" user="self">
+                  <!-- 用户的头像 -->
+                    <div class="comment-left">
+                      <img src="../img/house.jpg" alt="">
+                    </div>
+                    <!--用户名字以及发表的言论  -->
+                    <div class="comment-right">
+                      <!-- 用户名称以及评论  固定的一个回复评论 -->
+                        <div class="comment-text">
+                          <span class="user">老王：</span>我
+                        </div>
+                        <!-- 发表的事件 点赞 以及删除功能 -->
+                        <!-- 发表实时 时间 -->
+                        <div class="comment-date">
+                          02-14 22:00 
+                          <!-- 别的用户和自己可以为自己的评论点赞  -->
+                          <a class="comment-zan" href="javascript:;" total="23" my="1">23 取消赞</a>
+                           <a class="comment-dele" href="javascript:;">回复</a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="comment" user="self">
+                  <!-- 用户的头像 -->
+                    <div class="comment-left">
+                      <img src="http://www.sucainiu.com/themes/images/demo/500x300-2.png" alt="">
+                    </div>
+                    <div class="comment-right">
+                      <!--用户名字以及发表的言论  -->
+                        <div class="comment-text"><span class="user">我：</span>看哭了留卡号吧</div>
+                       <!-- 发表的事件 点赞 以及删除功能 -->
+                        <div class="comment-date">02-14 24:00 <a class="comment-zan" href="javascript:;" total="0" my="0">赞</a> <a class="comment-dele" href="javascript:;">删除</a> </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 用户评论书写发表文本区域 -->
+            <div class="hf">
+              <!-- 用户评论的输入文本框 -->
+                <textarea type="text" class="hf-text" autocomplete="off" maxlength="100">评论…</textarea>
+                <!-- 输入文本点击回复评论发表 -->
+                <button class="hf-btn">回复</button>
+                <!-- 文本宽最多文字限定 -->
+                <span class="hf-nub">0/100</span> 
+              </div>
+        </div>
+    </li>
+
+</ul>
+<script src="../js/comment.js"></script>
+</body>
+</html>
