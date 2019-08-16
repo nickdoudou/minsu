@@ -1,25 +1,29 @@
 /*尾部*/
+ /*尾部盒子宽高*/
 .foot{
     width: 1903px;
     height: 339px;
 }
+/*文字盒子居中宽高*/
 .text{
     margin: 0 auto;
     width: 1048px;
     height: 340px;
 }
+/*ul 成一排显示*/
 .text_bg{
     width: 158px;
     height: 203px;
     float: left;
     display: flex;
     padding: 0px 8px;
-    margin: 30px;
+    margin: 20px;
 }
 .text_bg li{
     list-style: none;
     line-height: 25px;
 }
+/*文字鼠标滑上去有一条线*/
 .text_bg li:hover{
     border-bottom: 1px solid #767676;
 }
@@ -30,22 +34,44 @@
 .text_lg{
     background: #006a70;
     border-radius: 5px;
+    width: 48px;
+    height: 22px;
 }
 .text_hg{
     background: #006a70;
     border-radius: 5px;
+    width: 48px;
+    height: 22px;
 }
 .line{
     width: 809px;
     height: 42px;
 }
 .line_lg p{
-    width: 556px;
+    width: 576px;
     height: 18px;
     margin: 0;
     text-align: center;
 }
 .p_text:hover{
-    border-bottom: 1px solid #767676;
+   border-bottom: 1px solid #767676;
 }
-
+.img_lg{
+    position: relative;
+    left: 500px;
+    top: 25px;
+}
+.left{
+   position: relative;
+   left: 50px;
+}
+.text_h{
+    position: relative;
+     left: 210px; 
+     bottom: 20px;  
+}
+.text_g{
+    position: relative;
+    left: 300px;
+    bottom: 40px;
+}
