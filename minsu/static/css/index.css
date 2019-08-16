@@ -1,6 +1,7 @@
 .container {
     width: 1080px;
     margin: 0 auto;
+    padding-bottom: 150px;
 }
 
 
@@ -9,6 +10,7 @@
 .discount {
     width: 100%;
     margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 .title_bar {
@@ -86,7 +88,7 @@
 /* 设置详情的图片样式 */
 .details_img {
     width: 100%;
-    background-repeat: no-repeat;
+    height: 100%;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 }
@@ -156,10 +158,20 @@
     font-size: 14px;
     color: #484848;
 }
+/* 四份布局 */
+.desc_img1 {
+  width: 246px;
+  height: 164px;
+  background-repeat: no-repeat;
+    border-radius: 3px;
+}
+.desc1 {
+  width: 260px;  
+  padding: 8px 5px 12px;
+}
 /* 新的四份布局 */
 .desc {
     width: 260px;
-    height: 325px;
     padding: 4px;
     margin-top: 10px;
   
@@ -226,4 +238,34 @@
 }
 .user span{
   padding: 0 5px;
+}
+/* 保障样式 */
+.protect{
+    content: "";
+    display: block;
+    clear: both;
+    width: 100%;
+    height: 80px;
+}
+.pro_lf{
+  float: left;
+  width: 33.33%;
+  display: inline-flex;
+  margin:20px 0;
+}
+/* .pro_png{
+  width: 50px;
+  display: inline-block;
+} */
+.pro_png img{
+  width: 50px;
+  height: 50px;
+}
+.pro_text{
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: middle;
+}
+.pro_text span{
+  flex-wrap: wrap;  
 }

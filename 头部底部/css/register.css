@@ -1,0 +1,45 @@
+/*登录注册页面*/
+.register{
+    margin: 0 auto;
+    width: 300px;
+    height: 400px;
+    border: 1px solid red;
+}
+/*登录注册下面的一条线*/
+.text{
+    border-bottom: 2px solid blue;
+    height: 50px;
+}
+/*左边邮箱注册*/
+.left{
+    position: relative; 
+    left: 120px;
+    top: 20px;
+    
+}
+/*右边手机号注册*/
+.right{
+    position: relative;
+    left:30px;
+    top: 20px;
+}
+.input{
+    position: relative;
+    display: flex;
+    top: 30px;
+}   
+/*手机号框*/
+.input .text{
+    margin-left: 20px;
+}
+/*验证*/
+.verify{
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+/*密码*/
+.password{
+    position: relative;
+    top: 70px;
+}
