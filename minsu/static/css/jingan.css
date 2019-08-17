@@ -136,6 +136,9 @@ section{
   font-weight: 600;
   color: #484848;
 }
+.sh_title h1{
+  font-size:24px
+}
 .room,.bed,.both,.people{
   float: left;
   padding-right: 15px;
@@ -215,10 +218,11 @@ section{
   padding: 16px;
   margin-top: 16px;
   margin-bottom: 32px;
+  background-color: rgb(248, 248, 248);
 }
 .house_intr div:first-child{
   color: #484848;
-  font-size: 16px;
+  font-size: 14px;
   margin: 17px 0;
 }
 .house_intr div:last-child{
@@ -235,11 +239,101 @@ section{
   padding: 20px 5px;
   box-sizing: border-box
 }
+.room_details p:first-child{
+  font-weight: 600
+}
 .room_details div{
   margin: 10px 0
 }
 .room_details p{
-  font-size: 14px;
+  font-size: 12px;
   color: #484848;
+}
+/* 旅行保障 */
+.save{
+  box-sizing: border-box;
+  height: 65px;
+}
+.save div{
+  border-bottom: 1px solid rgba(72,72,72,.2);
+  font-size: 14px;
+  color: #484848
+}
+.save::before{
+  display: table;
+  content: ""
+}
+.save_content span:first-child{
+  font-weight: 600;
+}
+.save_content span:not(:first-child){
+  margin-left: 5px
+}
+/* 住宿说明 */
+.house_info{
+  border-bottom: 1px solid rgba(72,72,72,.2)
+}
+.house_info div{
+  font-size: 14px
+}
+.house_info div span:first-child{
+  width: 120px;
+  font-weight: 600;
+  margin-right: 50px;
+  float: left;
+}
+.house_info>div span:last-child{
+  width: 370px;
+  display: inline-block;
+  color: #484848
+}
+.house_info div::before{
+  display: table;
+  content: ""
+}
+.house_info div:not(:first-child){
+  padding: 18px 0
+}
+.house_info::after{
+  display: block;
+  content: "";
+  clear: both;
+}
+/* 房屋设施 */
+.house_facility{
+  margin-top: 20px;
+  height: 80px;
+  border-bottom: 1px solid rgba(72,72,72,.2)
+}
+.house_facility>div>div{
+  float: left;
+  text-align: center;
+  margin-right: 45px;
+  font-size: 12px;
+  color: #484848
+}
+.house_facility>div:last-child a{
+  padding-top: 8px;
+  font-weight: 600;
+  color: #008489
+}
+/* 评价 */
+.comment_title>div:first-child{
+  text-align: left;
+  margin: 36px 0 24px 0;
+}
 
+.comment_star>img{
+  float: left;
+}
+.comment_star>input:last-child{
+  width: 33%;
+  float: right;
+  width: 187px;
+  height: 24px
+}
+.comment_star::after{
+  display: block;
+  content: "";
+  clear: both;
 }
