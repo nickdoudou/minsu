@@ -1,0 +1,54 @@
+*{margin: 0px;padding: 0px;}
+/*头部*/
+.head{
+    width: 1920px;
+    height: 80px;
+    background: #00848A;
+    
+}
+.header{
+    position: relative;
+   width: 100%;
+   height: 80px;
+   content: "";
+    clear: both;
+    display: block;
+}
+.log img{
+    float: left; 
+    padding:5px 15px 0 115px;
+}
+.search::after{
+    content: "";
+    clear: both;
+    display: block;
+    padding: 5px 0 0 75px;
+    
+}
+.search input{
+    width: 400px;
+    font-size: 0.8em;
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: white;
+}
+.nav{
+    position: absolute;
+    width: 576px;
+    right: 350px;
+    top: 15px;
+}
+.nav li{
+    float: left;
+    list-style: none;
+    padding: 10px;
+    
+}
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+.nav li:hover{
+    border-bottom: 3px solid  white;
+}
