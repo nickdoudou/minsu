@@ -27,9 +27,10 @@
 .phone{
     position: relative;
     display: flex;
-    top: 20px;
+    top: 26px;
+    margin: 0 auto;
     width: 350px;
-    left: 20px;
+    height: 21px;
 }   
 /*手机号框*/
 .phone input{
@@ -38,46 +39,56 @@
 /*密码框*/
 .password{
     position: relative;
-    top: 50px;
-    width: 350px;
-    margin-left: 50px;
+    top: 45px;
+    width: 348px;
+    height: 21px;
+    margin:0 0 0 55px;
 }
 .password input{
-     margin-left: 10px; 
+    margin-left: 10px;
 }
 /*立即注册框*/
-.now button{
+.now{
     position: relative;
-   top: 150px;
+   top: 140px;
     left: 70px;
     width: 255px;
-    height: 40px;
     background: #00848A;
     cursor: pointer;
 }
+.now div{
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+}
 /*自动登录*/
+.automatic{
+    position: relative;
+    top: 155px;
+    width: 350px;
+    height: 31px;
+    margin: 0  0 0 70px;
+}
 .automatic input{
-    position: relative;
-    top: 180px;
-    left: 65px;
+    width: 8px;
+    height: 8px;
 }
-.automatic p{
-    position: relative;
-    top: 152px;
-    margin-left: 85px;
-    font-size: 5px;
+.text_p{
+   position: relative;
+   top: 160px;
+   width: 350px;
+   height: 31px;
+   margin-left: 60px;
 }
-.partner p{
+.pic{
     position: relative;
-    top: 150px;
-    left: 50px;
+    top: 170px;
+    margin-left: 50px;
 }
-.partner img{
-    position: relative;
-    top: 150px;
-    margin-left: 80px;
-    cursor: pointer;
+.pic img{
+    margin-left: 30px;
 }
-.partner img:hover{
-    background-color: #00848A;
+.pic img:hover{
+    background-image: url(../imgs/weibo1.png) no-repeat;
 }
