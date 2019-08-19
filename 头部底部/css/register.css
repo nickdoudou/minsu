@@ -73,6 +73,7 @@
     width: 255px;
     background: #00848A;
     cursor: pointer;
+    border-radius: 5px;
 }
 .now div{
     text-align: center;
@@ -128,26 +129,109 @@
     border: 1px solid blue;
 }
 .enter{
-   margin-left: 80px;
-   padding-top: 20px;
+    position: relative;
+    top: 20px;
+   margin-left: 40px;
+   border-bottom: 2px solid #00848A;
 }
 /*账号登陆*/
 .enter span{
     font-size: 20px;
     cursor: pointer;
     color: #111;
+    
 }
+/*账号登录框*/
 .input_text{
     position: relative;
-    top: 30px;
+    top: 60px;
     width: 402px;
-    height: 40px;
+    height: 37px;
 }
 .input_text input{
-    width: 224px;
-    height: 30px;
+    width: 280px;
+    height: 37px;
     top: 30px;
-    margin-left: 80px;
+    margin-left: 40px;  
+    background: url(../imgs/denglu.png) no-repeat;
+}
+/*密码框*/
+.cipher{
+    position: relative;
+    top: 90px;
+    margin-left: 38px;
+}
+.cipher input{
+    width: 280px;
+    height: 37px; 
+    background: url(../imgs/mima.png) no-repeat;
+}
+/*登录按钮*/
+.login{
+    position: relative;
+    top: 110px;
+    width: 280px;
+    height: 37px;
+    background: #00848A;
+    margin-left: 40px;
+    border-radius: 5px;
+}
+.login div{
+    width: 280px;
+    height: 37px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+}
+/*下次自动登陆*/
+.autologin{
+    position: relative;
+    top: 120px;
+}
+.autologin input{
+    margin-left: 35px;
+}
+.autologin a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #333;
+}
+/*第三方登陆*/
+.openid{
+    position: relative;
+    top: 180px;
+}
+/*左边的线*/
+.openid .openid_lg{
+    position: relative;
+    top: 30px;
+    width: 103px;
+    height: 2px;
+    background: #9b9b9b;
+    margin-left: 221px;
    
-    
+}
+/*中间的字*/
+.openid_hg{
+   margin-left: 138px;
+   margin-top: 5px;
+   color: #00848A;
+   font-size: 11px;
+}
+/*右边的线*/
+.openid_sg{
+    width: 103px;
+    height: 2px;
+    background: #9b9b9b;
+    margin-left: 30px;
+}
+/*第三方登录图标*/
+.imags{
+    position: relative;
+    top: 210px;
+    margin-left: 100px;
+}
+.imags img{
+    margin: 10px;
 }
