@@ -1,51 +1,145 @@
-*{margin: 0px;padding: 0px;}
+
 /*头部*/
 .head{
     width: 100%;
     height: 80px;
     background: #00848A;
-    
+    content: "";/*解决高度坍塌*/
+    display: block;
+    clear: both
 }
 .header{
-   height: 80px;
+   height: 80px;/*定高*/
 }
-.log img{
-    height: 40px;
-    width: 40px;
-}
-.search{
-  width: 460px;
-}
-.search::after{
+.log{
+  width: 140px;
+  height: 80px;
 
-    
 }
+/* logo图片样式 */
+.log img{
+  height: 40px;
+  width: 40px;
+  padding: 20px 50px;
+  margin-left: 80px;
+}
+/* 搜索框 */
+.search{
+  width: 490px;
+  height: 40px;
+  margin-top:20px;
+  margin-left: 190px;
+  display: inline-block;
+  position: relative;
+} 
 .search input{
     font-size: 16px;
     width: 100%;
-    padding: 12px;
+    padding: 12px 0;
     background-color: white;
     border-radius: 5px;
 }
 .search_icon{
-  display: inline-block;
-  height: 52px;
-  width: 52px;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top:5px;
+  left: 450px;
 }
 .search_icon img{
   height: 100%;
   width: 100%;
 }
 .nav{
+  margin-top:10px;
+  margin-left:150px;
 
-  /* list-style: none */
 }
-.nav li{
-    list-style: none;   
-}
+.nav-itmes{
+  
+  display: inline-block;
+  list-style: none;
+  margin-top: 25px;
+  margin-left: 45px;
+  text-align:center;
+  position:relative;
+  line-height: 50%;  
+} 
 .nav a {
-    text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
 }
-.nav li:hover{
-    border-bottom: 3px solid  white;
+
+hr{
+  border:1px solid rgb(239,239,239);
 }
+
+.header>ul>li:hover{
+  /* height: 100px; */
+  cursor:pointer;
+}
+
+.header>ul>li>ul{
+  display: block;
+  content: "";
+  clear:both;
+  background-color:#fff;
+  width:200px;
+  border:1px solid rgb(239,239,239); 
+  border-top:0;
+  position:absolute;
+}
+.header>ul>li>ul>span{
+  display: block;
+  width: 100%;
+  height:20px;
+  text-align:left;
+  background-color: #e8e8e8;
+}
+.header>ul>li>ul>li{
+  display:block;
+  text-align:left;
+  width:100%;
+  height:20px;
+}
+
+.header>ul>li:first-child>ul{
+  width:200px;
+}
+/* .header>ul>li:first-child>ul>li{
+  float:left;
+} */
+/* .header>ul>li:nth-child(2)>ul>li:nth-child(2n+1){
+  width:100;
+}
+.header>ul>li:nth-child(2)>ul>li:nth-child(2n){
+  padding-left:10px
+} */
+
+.header>ul>li:first-child>ul{
+  /* 如果只做单纯的显示，就这个：display:none; */
+  top:55px;
+  opacity:0;
+  transition:all .5s linear;
+}
+.header>ul>li:first-child:hover>ul{
+  /* 如果只做单纯的显示，就这个：display:block; */
+  top:40px;
+  opacity:1;
+}
+/* .header>ul>li:nth-child(2)>ul{
+  /* 如果只做单纯的显示，就这个：display:none; */
+  /* top:35px;
+  opacity:0;
+  width:0px; height:0px;
+  overflow:hidden;
+  transition:all .5s linear;
+} */ 
+/* .header>ul>li:nth-child(2):hover>ul{ */
+  /* 如果只做单纯的显示，就这个：display:block; */
+  /* top:35px;
+  width:202px;
+  height:52px;
+  opacity:1;
+} */
