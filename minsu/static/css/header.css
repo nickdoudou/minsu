@@ -1,51 +1,81 @@
-*{margin: 0px;padding: 0px;}
+
 /*头部*/
 .head{
     width: 100%;
     height: 80px;
     background: #00848A;
-    
+    content: "";/*解决高度坍塌*/
+    display: block;
+    clear: both
 }
 .header{
-   height: 80px;
+   height: 80px;/*定高*/
 }
-.log img{
-    height: 40px;
-    width: 40px;
-}
-.search{
-  width: 460px;
-}
-.search::after{
+.log{
+  width: 140px;
+  height: 80px;
 
-    
 }
+/* logo图片样式 */
+.log img{
+  height: 40px;
+  width: 40px;
+  padding: 20px 50px;
+  
+}
+/* 搜索框 */
+.search{
+  width: 490px;
+  height: 40px;
+  margin-top:20px;
+  display: inline-block;
+  position: relative;
+} 
 .search input{
     font-size: 16px;
     width: 100%;
-    padding: 12px;
+    padding: 12px 0;
     background-color: white;
     border-radius: 5px;
 }
 .search_icon{
-  display: inline-block;
-  height: 52px;
-  width: 52px;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top:5px;
+  left: 450px;
 }
 .search_icon img{
   height: 100%;
   width: 100%;
 }
 .nav{
+  margin-top:10px;
+  margin-left:150px;
 
-  /* list-style: none */
 }
 .nav li{
+  display: inline-block;
     list-style: none;   
-}
+    padding: 20px 25px;
+     height: 100%;
+    vertical-align: middle ;
+    box-sizing: border-box ;
+    border-bottom: 2px solid transparent
+} 
 .nav a {
+  color: #fff;
+  font-weight: 600;
     text-decoration: none;
 }
 .nav li:hover{
     border-bottom: 3px solid  white;
+}
+/* 下拉框样式 */
+.dropdown-menu{
+  display:none;/*隐藏*/
+  width:200px;
+  list-style:none; margin:0; padding:0;
+  border:1px solid #aaa;
+  box-shadow:5px 5px 6px #000;
 }

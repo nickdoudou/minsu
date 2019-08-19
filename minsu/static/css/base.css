@@ -12,3 +12,14 @@ body{
 a {
     text-decoration: none;
 }
+.clear{
+  content: "";
+  display: block;
+  clear: both;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
