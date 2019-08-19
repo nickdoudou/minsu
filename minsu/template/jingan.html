@@ -7,15 +7,17 @@
   <title>Document</title>
   <link rel="stylesheet" href="../static/css/base.css">
   <link rel="stylesheet" href="../static/css/jingan.css">
+  <link rel="stylesheet" href="../static/css/date.css">
+  <script src="../static/js/date.js"></script>
 </head>
 <body>
   <header class="header">
     <div class="header_left">
       <div class="icon_logo">
-        <svg t="1565784547769" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4748" width="32" height="32"><path d="M983.893333 0C1006.045867 0 1024 17.954133 1024 40.106667l0 274.466133 0 428.612267C1024 898.286933 898.286933 1024 743.2192 1024l-33.792 0L709.4272 314.606933 354.7136 314.606933 354.7136 0l354.7136 0L983.893333 0zM669.2864 354.7136 314.606933 354.7136 314.606933 0l-33.792 0C125.713067 0 0 125.713067 0 280.7808l0 703.112533C0 1006.045867 17.954133 1024 40.106667 1024l274.466133 0L314.5728 669.2864l354.7136 0L669.2864 354.7136z" p-id="4749" fill="#d81e06"></path></svg>
+        <img src="../pubulic/image/logo.png" class="icon-logo-img">
       </div>
       <div>
-        <svg t="1565784354006" class="icon_search" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2931" width="32" height="32"><path d="M128.01376 447.813287A319.988534 319.988534 0 0 1 448.002293 127.995413a319.988534 319.988534 0 1 1 0 639.721077A319.988534 319.988534 0 0 1 128.01376 447.813287z m872.075417 436.720351L826.186075 710.374545A453.359755 453.359755 0 0 0 452.866119 0 453.359755 453.359755 0 0 0 0.018346 453.701076a453.274424 453.274424 0 0 0 452.933103 453.615745 450.117204 450.117204 0 0 0 258.294745-81.234422l173.56178 173.903102a81.490413 81.490413 0 0 0 115.366533 0 81.917065 81.917065 0 0 0 0-115.451863h-0.08533z" p-id="2932"></path></svg>
+        <img src="../pubulic/header/search.png" class="icon-search">
         <input type="text" class="header_search">
       </div>
     </div>
@@ -31,6 +33,7 @@
       </ul>
     </div>
   </header>
+  <!-- 房屋图片 -->
   <div class="pic">
     <div class="pic_left">
       <img src="../pubulic/image/JA1.jpg" alt="">
@@ -210,6 +213,7 @@
               </div>
           </div>
         </div>
+        <!-- 评论详情 -->
         <div class="comment">
           <div class="comment_title">
             <div><h2>评价</h2></div>
@@ -331,6 +335,7 @@
               </div>
             </div>
           </div>
+          <!-- 评论分页 -->
           <div class="comment_paging">
             <ul class="clear">
               <li><a href="javascsript:;"><img src="../pubulic/image/left_paging.png" alt=""></a></li>
@@ -344,7 +349,48 @@
           </div>
         </div>
       </div>
-    </div>
+      <!-- 房屋可订日期 -->
+      <div class="order_date">
+        <div>
+          <h2>可订日期</h2>
+        </div>
+        <div id='calen'></div>
+      </div>
+      <div class="localtion">
+        <h2>位置</h2>
+        <div class="local_info">
+          <span>上海，中国</span>
+          <p>襄阳南路与建国西路交界处｡南起肇嘉浜路,北至淮海中路｡
+          </p>
+          <p>距离环贸iapm走路十五分钟
+          </p>
+          <p>距离新天地思南公馆走路十五分钟</p>
+          <a href="javascript:;">查看更多</a>
+        </div>
+      </div>
+      <!-- 住户须知 -->
+      <div class="notice">
+        <h2>须知</h2>
+        <div class="notice_info">
+          <ul>
+            <li>基本要求</li>
+            <li>
+              <p>不适合婴幼儿（2岁以内）入住</p>
+              <p>禁止吸烟</p>
+              <p>不允许携带宠物</p>
+              <p>不允许举办派对和活动</p>
+            </li>
+          </ul>
+          <ul>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
   </section>
+  <script>
+    //只需实例化calendar实例即可，传入的参数为html对象的id，举个例子如下
+new calendar('calen');
+</script>
 </body>
 </html>
