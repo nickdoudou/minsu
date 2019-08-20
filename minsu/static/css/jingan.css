@@ -16,14 +16,20 @@
   height: 32px;
   margin: 10px 24px;
 }
+.icon-logo-img{
+  width: 32px
+}
+
 .header_search{
   width: 460px;
   height: 48px;
   margin-left: 10px;
+  border: 1px solid #484848
 }
-.icon_search{
+.icon-search{
+  width: 32px;
   position: absolute;
-  top: 29px;
+  top: 25px;
   left: 100px;
 }
 /* 头部右边 */
@@ -241,5 +247,63 @@ section{
 .room_details p{
   font-size: 14px;
   color: #484848;
+<<<<<<< HEAD
 
+=======
+  font-size: 14px
+}
+/* 评论分页 */
+.comment_paging ul{
+  margin-top: 20px
+}
+.comment_paging ul>li{
+  list-style: none;
+  float: left;
+  margin-right: 20px;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  cursor: pointer;
+}
+.comment_paging ul>li:not(:nth-child(6)){
+  border: 1px solid rgba(72,72,72,.2);
+  border-radius: 50%;
+}
+/* 日期选择框 */
+.order_date :first-child>h2{
+  font-size: 22px;
+  color: #484848;
+  font-weight: 600
+}
+#calen{
+  margin-top: 10px
+}
+/* 地理位置 */
+.localtion{
+  position: relative;
+}
+.localtion>h2{
+  font-size: 20px;
+  color: #484848;
+  margin:80px 0 20px 0;
+  font-weight: 600
+}
+.local_info span{
+  color: #484848;
+  font-size: 14px;
+}
+.local_info p{
+  margin:5px 0;
+  color: #484848
+}
+.local_info a{
+  color: #008489;
+  font-size: 16px;
+  font-weight: 600
+}
+.notice_info>ul:first-child>li{
+  float: left;
+  margin-right: 50px;
+>>>>>>> 8b264f5b223d31ddf8ec339fc6407d8ecf8ba845
 }
