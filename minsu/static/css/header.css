@@ -3,7 +3,7 @@
 .head{
     width: 100%;
     height: 80px;
-    background: #00848A;
+    background: #00848A;/*背景色*/
     content: "";/*解决高度坍塌*/
     display: block;
     clear: both
@@ -12,7 +12,7 @@
    height: 80px;/*定高*/
 }
 .log{
-  width: 140px;
+  width: 140px;/*给logo加宽高*/
   height: 80px;
 
 }
@@ -20,8 +20,8 @@
 .log img{
   height: 40px;
   width: 40px;
-  padding: 20px 50px;
-  margin-left: 80px;
+  padding: 20px 50px;/*内边距*/
+  margin-left: 80px;/*左外边距*/
 }
 /* 搜索框 */
 .search{
@@ -40,9 +40,9 @@
     border-radius: 5px;
 }
 .search_icon{
-  height: 40px;
+  height: 40px;/*设定搜索图片的大小*/
   width: 40px;
-  position: absolute;
+  position: absolute;/*定位搜索图案*/
   top:5px;
   left: 450px;
 }
@@ -50,24 +50,24 @@
   height: 100%;
   width: 100%;
 }
+/*导航*/
 .nav{
-  margin-top:10px;
-  margin-left:150px;
-
+  margin-top:10px;/*上外边距*/
+  margin-left:150px;/*左外边距*/
 }
+/*导航选项*/
 .nav-itmes{
-  
-  display: inline-block;
+  display: inline-block;/*行内块*/
   list-style: none;
-  margin-top: 25px;
-  margin-left: 45px;
-  text-align:center;
-  position:relative;
+  margin-top: 25px;/*上外边距*/
+  margin-left: 45px;/*左外边距*/
+  text-align:center;/*文字居中*/
+  position:relative;/*固定定位为绝对定位提供参照物*/
   line-height: 50%;  
 } 
 .nav a {
   color: #fff;
-  font-weight: 600;
+  font-weight: 600;/*字体加粗*/
   text-decoration: none;
 }
 
@@ -77,20 +77,20 @@ hr{
 
 .header>ul>li:hover{
   /* height: 100px; */
-  cursor:pointer;
+  cursor:pointer;/*移入小手指*/
 }
 
 .header>ul>li>ul{
   display: block;
-  content: "";
+  content: "";/*清楚高度坍塌*/
   clear:both;
   background-color:#fff;
   width:200px;
   border:1px solid rgb(239,239,239); 
   border-top:0;
-  position:absolute;
+  position:absolute;/*定位*/
   margin-top:5px;
-  right: -35px;
+  right: -25px;
 }
 .header>ul>li>ul>:first-child{
   height: 30px;
@@ -99,8 +99,8 @@ hr{
   background-color: #e8e8e8;
 }
 .header>ul>li>ul>li{
-  display:block;
-  text-align:left;
+  display:block;/*块级*/
+  text-align:left;/*文字靠左*/
   width:100%;
   height:20px;
 }
@@ -108,17 +108,6 @@ hr{
 .header>ul>li:first-child>ul{
   width:200px;
 }
-/* .header>ul>li:first-child>ul>li{
-  float:left;
-} */
-header>ul>li:nth-child(2)>ul>li:nth-child(2n+1){
-  width:100;
-}
-
-.header>ul>li:nth-child(2)>ul>li:nth-child(2n){
-  padding-left:10px
-} 
-
 .header>ul>li:first-child>ul{
   /* 如果只做单纯的显示，就这个：display:none; */
   top:55px;
@@ -130,18 +119,42 @@ header>ul>li:nth-child(2)>ul>li:nth-child(2n+1){
   top:40px;
   opacity:1;
 }
-/* .header>ul>li:nth-child(2)>ul{
-  /* 如果只做单纯的显示，就这个：display:none; */
-  /* top:35px;
+.nav-icon {
+  width: 660px;
+  height: 230px;
+  position: absolute;
+  z-index: -1;
+  right: -115px;
+  margin-top:37px;
+  background-color:#fff;
+}
+.nav-icon div{
+  display: inline-block;
+  display: none;
+}
+.nav-icon div img{
+  width: 160px;
+  height: 160px;
+  padding: 16px;
+}
+.nav-icon div div{
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+/* .header>ul>li:nth-child(2):hover>div{
+  /*如果只做单纯的显示，就这个：display:none; 
+  top:35px; 
   opacity:0;
-  width:0px; height:0px;
-  overflow:hidden;
-  transition:all .5s linear;
-} */ 
-/* .header>ul>li:nth-child(2):hover>ul{ */
-  /* 如果只做单纯的显示，就这个：display:block; */
-  /* top:35px;
-  width:202px;
-  height:52px;
-  opacity:1;
-} */
+  overflow:hidden; 
+  transition:all .5s linear; 
+  } 
+/*.header>ul>li:nth-child(2)>div{ 
+   /*如果只做单纯的显示，就这个：display:block; 
+   top:35px;
+   opacity:1;
+}  */
