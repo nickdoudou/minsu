@@ -105,18 +105,22 @@ hr{
   height:20px;
 }
 
-.header>ul>li:first-child>ul{
-  width:200px;
-}
+
 .header>ul>li:first-child>ul{
   /* 如果只做单纯的显示，就这个：display:none; */
-  top:55px;
+  top:40px;
+  width:0px;
+   height:0px;
+  overflow:hidden;
   opacity:0;  
    transition:all .5s linear;
 }
 .header>ul>li:first-child:hover>ul{
   /* 如果只做单纯的显示，就这个：display:block; */
   top:40px;
+  width:200px;
+  height:230px;
+  font-weight: 600;
   opacity:1;
 }
 .nav-icon {
@@ -125,12 +129,11 @@ hr{
   position: absolute;
   z-index: -1;
   right: -115px;
-  margin-top:37px;
+  top:45px;
   background-color:#fff;
 }
 .nav-icon div{
   display: inline-block;
-  display: none;
 }
 .nav-icon div img{
   width: 160px;
@@ -146,15 +149,19 @@ hr{
   font-weight: 600;
 }
 
-/* .header>ul>li:nth-child(2):hover>div{
-  /*如果只做单纯的显示，就这个：display:none; 
-  top:35px; 
+.nav-itmes:nth-child(2)>.nav-icon{
+  /* 如果只做单纯的显示，就这个：display:none;  */
+  top:40px;
+  width: 0px;
+  height: 0px; 
+  overflow:hidden;  
   opacity:0;
-  overflow:hidden; 
-  transition:all .5s linear; 
-  } 
-/*.header>ul>li:nth-child(2)>div{ 
-   /*如果只做单纯的显示，就这个：display:block; 
-   top:35px;
-   opacity:1;
-}  */
+  transition:all .7s linear;  
+  }
+ .nav-itmes:nth-child(2):hover .nav-icon{ 
+   /* 如果只做单纯的显示，就这个：display:block;  */
+   top:40px;   
+   width: 660px;
+   height: 230px;
+   opacity:1; 
+ }    

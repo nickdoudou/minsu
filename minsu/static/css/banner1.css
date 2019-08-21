@@ -1,0 +1,60 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+/*设置最外层div的宽高溢出隐藏相对定位*/
+#slideshow{
+  
+  width:100%;  
+  height: 450px;
+  margin: 0 auto; /*设置在页面水平居中*/
+  overflow: hidden;
+  position: relative;  
+}
+
+#slideshow img{
+  width:100%;
+  height:450px;
+  position: absolute; /*图片采取绝对定位，均位于左上角，重叠在一起*/
+  top: 0;
+  left: 0;
+  opacity: 0; /*初始不透明度为0，图片都看不见*/
+  transition: opacity 0.5s linear; /*--重点--定义一个关于透明度的transition*/
+  cursor: pointer;
+}
+#slideshow img.active{
+  opacity: 1; /*有active类的图片不透明度为1，即显示图片*/
+}
+/*-- 设置页码的样式 --*/
+#slideshow div{
+  width: 100%;
+  position: absolute; /*绝对定位*/
+  bottom: 10px;       /*底部向上移动10个像素*/
+  text-align: center;
+}
+#slideshow span{
+  display: inline-block;
+  width: 25px;
+  height:25px;
+   /*当只有一行文本时height等于line-height*/
+  border-radius: 25px; /*设置页码为圆形*/
+  margin: 0 15px;  
+  background: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+/*第一个下标圆点文字颜色，背景颜色*/
+#slideshow span.active{
+  color: white;
+  background: #FFDD55;
+}
+
+
+
+
+
+
+
+
+
+
