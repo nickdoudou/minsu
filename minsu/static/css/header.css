@@ -107,21 +107,23 @@ hr{
 
 
 .header>ul>li:first-child>ul{
-  /* 如果只做单纯的显示，就这个：display:none; */
+  /* 如果只做单纯的显示，就这个：*/
+  display:none; 
   top:40px;
   width:0px;
    height:0px;
   overflow:hidden;
-  opacity:0;  
-   transition:all .5s linear;
+  /* opacity:0;   */
+   /* transition:all .5s linear; */
 }
 .header>ul>li:first-child:hover>ul{
-  /* 如果只做单纯的显示，就这个：display:block; */
+  /* 如果只做单纯的显示，就这个：*/
+  display:block; 
   top:40px;
   width:200px;
   height:230px;
   font-weight: 600;
-  opacity:1;
+  /* opacity:1; */
 }
 .nav-icon {
   width: 660px;
@@ -150,18 +152,19 @@ hr{
 }
 
 .nav-itmes:nth-child(2)>.nav-icon{
-  /* 如果只做单纯的显示，就这个：display:none;  */
+  /* 如果只做单纯的显示，就这个： */
+  display:none; 
   top:40px;
   width: 0px;
   height: 0px; 
   overflow:hidden;  
-  opacity:0;
-  transition:all .7s linear;  
+  /* opacity:0; */
+  /* transition:all .7s linear;   */
   }
  .nav-itmes:nth-child(2):hover .nav-icon{ 
-   /* 如果只做单纯的显示，就这个：display:block;  */
+   /* 如果只做单纯的显示，就这个：*/display:block;  
    top:40px;   
    width: 660px;
    height: 230px;
-   opacity:1; 
+   /* opacity:1;  */
  }    
