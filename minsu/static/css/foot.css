@@ -1,1 +1,48 @@
 /*尾部*/
+
+footer{
+  border-top:1px solid #fff;
+  background-color:#00848A ;
+}
+
+.foot{
+  padding-top:100px;
+  display: flex;
+  color:#fff;
+  width: 1080px;
+  margin:0 auto;
+  font-size: 14px;
+  font-weight: 600;
+  justify-content: space-between;
+}
+ .contact div{
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.contact img{
+  width: 30px;
+  height: 30px;
+}
+.new{
+  display: inline-block;
+  width: 45px;
+  height: 22px;
+  text-align: center;
+  background-color:red;
+  border-radius: 5px;
+}
+.foot_bottom{
+  padding-top:100px;
+  color:#fff;
+  width: 1080px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 50px;s
+}
+.foot_bottom img{
+width: 30px;
+height: 30px;
+vertical-align: middle;
+}
