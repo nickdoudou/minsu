@@ -247,9 +247,6 @@ section{
 .room_details p{
   font-size: 14px;
   color: #484848;
-<<<<<<< HEAD
-
-=======
   font-size: 14px
 }
 /* 评论分页 */
@@ -305,5 +302,4 @@ section{
 .notice_info>ul:first-child>li{
   float: left;
   margin-right: 50px;
->>>>>>> 8b264f5b223d31ddf8ec339fc6407d8ecf8ba845
 }

@@ -1,38 +1,38 @@
 
 
-SET FOREIGN_KEY_CHECKS=0;
-
+SET NAMES UTF8;
+DROP DATABASE IF EXISTS Ms;
+CREATE DATABASE Ms CHARSET=UTF8;
+USE Ms;
 -- ----------------------------
 -- Table structure for `ms_index_carousel`
 -- ----------------------------
-DROP TABLE IF EXISTS `ms_index_carousel`;
 CREATE TABLE `ms_index_carousel` (
-  `cid` int(11) NOT NULL auto_increment,
-  `img` varchar(128) default NULL,
-  `title` varchar(64) default NULL,
-  `href` varchar(128) default NULL,
+  cid int(11) NOT NULL auto_increment,
+  img varchar(128) default NULL,
+  title varchar(64) default NULL,
+  href varchar(128) default NULL,
   PRIMARY KEY  (`cid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ms_index_carousel
 -- ----------------------------
-INSERT INTO `ms_index_carousel` VALUES ('9', 'img/index/banner1.jpg', '轮播广告商品1', 'product_details.html?lid=28');
-INSERT INTO `ms_index_carousel` VALUES ('10', 'img/index/banner2.jpg', '轮播广告商品2', 'product_details.html?lid=19');
-INSERT INTO `ms_index_carousel` VALUES ('11', 'img/index/banner3.jpg', '轮播广告商品3', 'lookforward.html');
-INSERT INTO `ms_index_carousel` VALUES ('12', 'img/index/banner4.jpg', '轮播广告商品4', 'lookforward.html');
+INSERT INTO `ms_index_carousel` VALUES ('9', 'img/index/banner1.jpg', '轮播广告商品', 'product_details.html?lid=28');
+INSERT INTO `ms_index_carousel` VALUES ('10', 'img/index/banner2.jpg', '轮播广告商品', 'product_details.html?lid=19');
+INSERT INTO `ms_index_carousel` VALUES ('11', 'img/index/banner3.jpg', '轮播广告商品', 'lookforward.html');
+INSERT INTO `ms_index_carousel` VALUES ('12', 'img/index/banner4.jpg', '轮播广告商品', 'lookforward.html');
 
 -- ----------------------------
 -- Table structure for `ms_discounts_sz`
 -- ----------------------------
-DROP TABLE IF EXISTS `ms_discounts_sz`;
 CREATE TABLE `ms_index_discounts` (
-  `pid` int(11) NOT NULL auto_increment,
-  `title` varchar(64) default NULL,
-  `details` varchar(128) default NULL,
-  `pic` varchar(128) default NULL,
-  `price` decimal(10,2) default NULL,
-  `href` varchar(128) default NULL,
+  pid int(11) NOT NULL auto_increment,
+  title varchar(64) default NULL,
+  details varchar(128) default NULL,
+  pic varchar(128) default NULL,
+  price decimal(10,2) default NULL,
+  href varchar(128) default NULL,
   PRIMARY KEY  (`pid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
 
@@ -49,14 +49,13 @@ INSERT INTO ms_discounts_sz VALUES ('13', '【白日梦蓝】留声机|巨幕投
 -- ----------------------------
 -- Table structure for `ms_hot_sh`
 -- ----------------------------
-DROP TABLE IF EXISTS `ms_hot_sh`;
 CREATE TABLE `ms_hot_sh` (
-  `pid` int(11) NOT NULL auto_increment,
+  pid int(11) NOT NULL auto_increment,
   `title` varchar(64) default NULL,
-  `details` varchar(128) default NULL,
-  `pic` varchar(128) default NULL,
-  `price` decimal(10,2) default NULL,
-  `href` varchar(128) default NULL,
+  details varchar(128) default NULL,
+  pic varchar(128) default NULL,
+  price decimal(10,2) default NULL,
+  href varchar(128) default NULL,
   PRIMARY KEY  (`pid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
 

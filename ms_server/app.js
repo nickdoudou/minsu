@@ -5,6 +5,7 @@ const reg =  require("./routers/reg");
 // 引入body-parser中间件
 const bodyParser = require('body-parser')
 const cors=require("cors");
+const index=require("./routers/index");
 
 var app = express();
 app.listen(3000);
@@ -18,3 +19,4 @@ app.use(bodyParser.urlencoded({extended:false}));
 //使用路由器 
 app.use('/login',login);
 app.use('/reg',reg);
+app.use('/index',index);
