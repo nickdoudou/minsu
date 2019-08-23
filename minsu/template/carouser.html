@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图(原生js)</title>
+    <style>
+      /*内外边距清零、背景颜色*/
+        *{
+          margin: 0;
+          padding: 0;
+          
+        }
+        *::selection{
+            background: none;
+        }
+      
+      
+         /*外边框相对定位、居中、宽高*/
+        .plat{
+            position: relative;
+            width: 100%;
+            height:550px;
+            margin: 0 auto;
+           
+        }
+        /*图片的宽高、绝对定位、左上角*/
+        .banner_img img{
+            width:100%;
+            height: 550px;
+            top: 0px;
+            left: 0px;
+            position: absolute;
+        }
+        /*透明度 持续时间*/
+        .banner_img li{
+            opacity: 0;
+            transition: 1s;
+        }
+      /*第一个li的透明度*/
+      .banner_img li:first-child {
+            opacity: 1;
+        }
+        /*按钮的宽高、绝对定位、居中、颜色、背景颜色、进入鼠标状态*/
+        .btn{
+          
+            width: 70px;
+            height: 100px;
+            position: absolute;
+            left: 0px;
+            top: 150px;
+            text-align: center;
+            
+            background-color: rgb(231,231,231,0.2);
+            cursor: pointer;
+        }
+        .btn span,.btn1 span{
+          display: inline-block;
+          font-size: 50px;
+          margin-top: 14px;
+          color:#fff;
+        }
+
+        /*按钮的鼠标移入背景颜色*/
+        .btn:hover{
+             background-color: rgb(231,231,231,0.5);
+         }
+         /*点击出现的背景颜色*/
+        .btn:active{
+            background-color: rgb(231,231,231,0.5);
+        }
+ /*按钮的宽高、绝对定位、居中、颜色、背景颜色、进入鼠标状态*/       
+        .btn1{
+            
+            width: 70px;
+            height: 100px;
+            position: absolute;
+            top: 150px;
+            right: 1px;
+            text-align: center;
+            color: #FFFFFF;
+            background-color: rgb(231,231,231,0.2);
+            cursor: pointer;
+        }
+         /*按钮的鼠标移入背景颜色*/
+        .btn1:hover{
+            background-color: rgb(231,231,231,0.5);
+        }
+          /*点击出现的背景颜色*/
+        .btn1:active{
+            background-color: rgb(231,231,231,0.5);
+        }
+        /*第一个下标圆点的宽高、绝对定位、背景色、圆点、位置*/
+        .num0{
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            background-color: rgb(255,255,255,0.8);
+            border-radius: 50%;
+            left:  46%;
+            top: 530px;
+        }
+        /*第二个下标圆点的宽高、绝对定位、背景色、圆点、位置*/
+        .num1{
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            background-color: rgb(255,255,255,0.8);
+            border-radius: 50%;
+            left:  48%;
+            top: 530px;
+        }
+        /*第三个下标圆点的宽高、绝对定位、背景色、圆点、位置*/
+        .num2{
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            background-color: rgb(255,255,255,0.8);
+            border-radius: 50%;
+            left: 50%;
+            top: 530px;
+        }
+        /*第四个下标圆点的宽高、绝对定位、背景色、圆点、位置*/
+        .num3{
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            background-color: rgb(255,255,255,0.8);
+            border-radius: 50%;
+            left: 52%;
+            top: 530px;
+        }
+        /* 圆点移入时的背景色 */
+        .num:hover{
+            background-color: rgb(0,0,0,0.7);
+        }
+        /*js添加的背景样式*/
+        .follow{
+            background-color: rgb(0,0,0,0.7);
+        }
+    </style>
+</head>
+<body>
+  <!--外边框 -->
+<div class="plat">
+  <!-- ul包裹着图片 -->
+    <ul class="banner_img">
+        <li><img src="../pubulic/banner/banner1.jpg"></li>
+        <li><img src="../pubulic/banner/banner2.jpg"></li>
+        <li><img src="../pubulic/banner/banner3.jpg"></li>
+        <li><img src="../pubulic/banner/banner4.jpg"></li>
+    </ul>
+<!-- 下标圆点 -->
+    <div class="dot" id="dot">
+        <div class="num0 num" id="num0"></div>
+        <div class="num1 num" id="num1"></div>
+        <div class="num2 num" id="num2"></div>
+        <div class="num3 num" id="num3"></div>
+    </div>
+
+    <div class="btn"  id="right"><span><</span></div>
+    <div class="btn1" id="left"><span>></span></div>
+    <script>
+ 
+      // 找到目标元素li
+        var li = document.getElementsByTagName('li');
+        // 获得目标元素右按钮
+        var right = document.getElementById('right');
+        // 获得目标元素左按钮
+        var left = document.getElementById('left');
+        // 找到元素为num的属性
+        var num = document.getElementsByClassName('num');
+        var liIndex = 0;  //图片的显示序号
+        var timer;  
+        addEvent();
+        /*监听事件*/
+        function addEvent() {
+          /*圆点的下标添加follow属性*/
+            num[0].classList.add('follow');
+            // 左右按钮添加事件
+            left.addEventListener('click',leftClick);
+            right.addEventListener('click',rightClick);
+            for (var i=0;i<li.length;i++) {   //给每一个小圆点加一个事件
+                num[i].addEventListener('mouseenter',dot);
+            }
+        }
+              /*加载图片和圆点的自动轮播样式和时间*/
+        window.onload = function () {
+          // 加载时间定时器
+             timer =  setInterval(function () {
+                liIndex++;
+                /*如果li的下标等于li的长度*/
+                if (liIndex ==li.length) {
+                //  li的下标等于0
+                    liIndex = 0;
+                }
+                // 循环遍历下标
+                for (var i=0;i<li.length;i++) {
+                  // li的下标的样式透明度
+                    li[i].style.opacity = 0;
+                    // 图片下标移除follow属性
+                    num[i].classList.remove('follow');
+                }
+                // li的下标的透明度样式
+                li[liIndex].style.opacity = 1;
+                //图片下标添加follow属性
+                num[liIndex].classList.add('follow');
+            },2000)//2秒循环一次
+        }
+        /*圆点*/
+        function dot(e) {  
+            clearInterval(timer);
+            var event = e.target;  //原事件
+            var ev = event.getAttribute('id').split('num');  //取到小圆点除去了num的id
+            liIndex = ev[1];
+            for (var i=0;i<li.length;i++) {
+                li[i].style.opacity = 0;
+                num[i].classList.remove('follow');  
+            }
+            li[liIndex].style.opacity = 1;
+            num[liIndex].classList.add('follow');
+        }
+        /*左箭头*/
+        function leftClick() {
+          // 清除时间定时
+            clearInterval(timer);
+            liIndex++;
+            // 如果li的下标等于负的li的长度
+            if (liIndex ==li.length) {
+              // li的下标等于0
+                liIndex = 0;
+            }
+            // 循环遍历li的长度添加移入移除样式
+            for (var i=0;i<li.length;i++) {
+                li[i].style.opacity = 0;
+                num[i].classList.remove('follow');
+            }
+            li[liIndex].style.opacity = 1;
+            num[liIndex].classList.add('follow');
+        }
+        /*右箭头*/
+        function rightClick() {
+          // 清除时间
+            clearInterval(timer);
+            liIndex--;
+            // 如果li的下标等于负的li的长度
+            if (liIndex == -li.length) {
+              // li的下标等于0
+                liIndex = 0;
+            }
+            /*循环下标 当case等于-1时下标等于3打破*/
+            switch (liIndex)
+            {
+                case -1:
+                    liIndex = 3;
+                    break;
+                case -2:
+                    liIndex = 2;
+                    break;
+                case -3:
+                    liIndex = 1;
+                    break;
+                case -4:
+                    liIndex = 0;
+                    break;
+            }
+            // 循环遍历li移除添加样式
+            for (var i=0;i<li.length;i++) {  
+              // li的透明度
+                li[i].style.opacity = 0;
+                // li移除follow
+                num[i].classList.remove('follow');
+            }
+            // 图片的透明度
+            li[liIndex].style.opacity = 1;
+            // 图片的样式
+            num[liIndex].classList.add('follow');
+        }
+    </script>
+</div>
+</body>
+</html>

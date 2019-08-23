@@ -92,6 +92,9 @@ hr{
   margin-top:5px;
   right: -25px;
 }
+.currency :nth-child(odd){
+  padding: 0 0 0 10px;
+}
 .header>ul>li>ul>:first-child{
   height: 30px;
   bottom: 0px;
@@ -113,6 +116,7 @@ hr{
   width:0px;
    height:0px;
   overflow:hidden;
+  z-index: 10001;
   /* opacity:0;   */
    /* transition:all .5s linear; */
 }
@@ -129,7 +133,7 @@ hr{
   width: 660px;
   height: 230px;
   position: absolute;
-  z-index: -1;
+  z-index: 1001;
   right: -115px;
   top:45px;
   background-color:#fff;
