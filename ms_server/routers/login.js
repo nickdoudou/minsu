@@ -5,10 +5,10 @@ const router = express.Router();
 // 导入连接池   
 const pool =  require("../pool");
 
-router.post("/login",(req,res)=>{
+router.get("/login",(req,res)=>{
     var obj=req.body;
     if(!obj.uname || !obj.upwd){
-        res.send({code:401,msg:"user name and password required"});
+        res.send(/*{code:401,msg:*/"user name and password required"/*}*/);
     }
     var sql=`SELECT uname,upwd FROM bl_user WHERE uname = ? and upwd = ?`;
     pool.query(sql,[obj.uname,obj.upwd],(err,result)=>{

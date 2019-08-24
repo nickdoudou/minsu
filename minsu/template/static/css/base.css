@@ -5,6 +5,10 @@ body,h3,h4,ul,li,hr {
 body{ 
     font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" ;
 }
+.container{
+  width: 1080px;
+  margin: 0 auto;
+}
 a {
     text-decoration: none;
 }

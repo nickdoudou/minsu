@@ -15,4 +15,16 @@ router.get("/",(req,res)=>{
 	})
 	
 })
+router.get("/sz",(req,res)=>{
+	console.log(456);
+	// 查询数据库相关数据返回给页面
+  var sql = "SELECT title,pic,price FROM ms_discounts_sz WHERE 0<pid<7 ORDER BY pid";
+  pool.query(sql,[],(err,result)=>{
+    if(err) throw err;
+    if(result.length>0){
+      res.send(result)
+    }
+    console.log(result)
+  })
+})
 module.exports=router;

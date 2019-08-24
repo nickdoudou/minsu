@@ -135,7 +135,7 @@
     display: inline-block;
     background-size: auto 9px;
     background-repeat: no-repeat;
-    background-image: url(../../pubulic/image/星星.png)
+    background-image: url(public/image/fiveStar.png)
 }
 .praise span:not(:first-child) {
     color: #484848;
