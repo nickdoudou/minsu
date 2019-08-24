@@ -1,6 +1,7 @@
  
-      // 找到目标元素li
-        var li = document.getElementsByTagName('li');
+     window.onload = function(){ // 找到目标元素li
+        var test=document.getElementById("test");
+        var li = test.getElementsByTagName('li');
         // 获得目标元素右按钮
         var right = document.getElementById('right');
         // 获得目标元素左按钮
@@ -21,8 +22,9 @@
                 num[i].addEventListener('mouseenter',dot);
             }
         }
+      
               /*加载图片和圆点的自动轮播样式和时间*/
-        window.onload = function () {
+
           // 加载时间定时器
              timer =  setInterval(function () {
                 liIndex++;
@@ -43,7 +45,7 @@
                 //图片下标添加follow属性
                 num[liIndex].classList.add('follow');
             },2000)//2秒循环一次
-        }
+        
         /*圆点*/
         function dot(e) {  
             clearInterval(timer);
@@ -113,3 +115,4 @@
             // 图片的样式
             num[liIndex].classList.add('follow');
         }
+      }

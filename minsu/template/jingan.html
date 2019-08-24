@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="../static/css/jingan.css">
   <link rel="stylesheet" href="../static/css/date.css">
   <script src="../static/js/date.js"></script>
+  <link rel="stylesheet" href="../static/css/comment.css">
+  <script src="../static/js/comment.js"></script>
+  <style>
+  
+  </style>
 </head>
 <body>
   <header class="header">
@@ -141,9 +146,6 @@
           </div>
         </div>
         <div>
-<<<<<<< HEAD
-          
-=======
           <div class="save">
             <div style="margin: 8px 0">
               <div class="save_content" style="padding: 12px 0">
@@ -346,7 +348,62 @@
               <li><a href="javascsript:;"><img src="../pubulic/image/right_paging_act.png" alt=""></a></li>
             </ul>
           </div>
->>>>>>> 8b264f5b223d31ddf8ec339fc6407d8ecf8ba845
+
+
+          <ul id="pn">
+            <!-- !-- 用ul里面的li包裹着发表的说说 图片  以及别人的回复 -->
+            <li class="list0"> 
+            
+                    <div class="comment-list">
+                        <div class="comment" user="self">
+                          <!-- 用户的头像 -->
+                            <div class="comment-left">
+                              <img src="../img/house.jpg" alt="">
+                            </div>
+                            <!--用户名字以及发表的言论  -->
+                            <div class="comment-right">
+                              <!-- 用户名称以及评论  固定的一个回复评论 -->
+                                <div class="comment-text">
+                                  <span class="user">老王：</span>我
+                                </div>
+                                <!-- 发表的事件 点赞 以及删除功能 -->
+                                <!-- 发表实时 时间 -->
+                                <div class="comment-date">
+                                  02-14 22:00 
+                                  <!-- 别的用户和自己可以为自己的评论点赞  -->
+                                  <a class="comment-zan" href="javascript:;" total="23" my="1">23 取消赞</a>
+                                  <a class="comment-dele" href="javascript:;">回复</a> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment" user="self">
+                          <!-- 用户的头像 -->
+                            <div class="comment-left">
+                              <img src="http://www.sucainiu.com/themes/images/demo/500x300-2.png" alt="">
+                            </div>
+                            <div class="comment-right">
+                              <!--用户名字以及发表的言论  -->
+                                <div class="comment-text"><span class="user">小王</span>还不错</div>
+                              <!-- 发表的事件 点赞 以及删除功能 -->
+                                <div class="comment-date">02-14 24:00 <a class="comment-zan" href="javascript:;" total="0" my="0">赞</a> <a class="comment-dele" href="javascript:;">删除</a> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 用户评论书写发表文本区域 -->
+                    <div class="hf">
+                      <!-- 用户评论的输入文本框 -->
+                        <textarea type="text" class="hf-text" autocomplete="off" maxlength="100">评论…</textarea>
+                        <!-- 输入文本点击回复评论发表 -->
+                        <button class="hf-btn">回复</button>
+                        <!-- 文本宽最多文字限定 -->
+                        <span class="hf-nub">0/100</span> 
+                      </div>
+                </div>
+            </li>
+
+          </ul>
+                    
+
         </div>
       </div>
       <!-- 房屋可订日期 -->
