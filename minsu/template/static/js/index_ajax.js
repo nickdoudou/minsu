@@ -8,9 +8,9 @@ $(function(){
       console.log(result);
       for(var item of result){
         console.log(item.img);
-        html+=`<li><img src="${item.img}"></li>`
+        html += `<li><img src="${item.img}"></li>`;
       }
-      $(".banner_img").html(html)
+      $(".banner_img").html(html);
     }
   })
   $.ajax({

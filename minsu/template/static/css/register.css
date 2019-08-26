@@ -1,0 +1,137 @@
+.bck{
+  background-image:url("public/image/reg_bg.jpg");
+}
+
+/* 注册界面整体样式 */
+
+.main{
+    width:600px;
+    position:fixed;
+    display:flex;
+    flex-wrap: wrap;
+    margin-left:32%;
+    left:-300px;
+    top:155px;
+    border-radius: 5px;
+    z-index: 1;
+  
+}
+/* 注册界面头部 */
+.reg{
+    float:right;
+    font-size:22px;
+    height:40px;
+    width: 100%;
+    text-align: center;
+    line-height:40px;
+    color:#fff;
+    padding-right:10px;
+    margin-top:22px;
+    padding-left: 30px;
+}
+/* 注册界面a标签 */
+.reg a{
+    color:#FA6D0E;
+}
+/* 注册界面框 */
+.bg{
+    width:420px;
+   margin: 0 auto;
+    /* border:1px solid #EEE; */
+    float:right;
+    /* background-color: #fff; */
+    padding:20px;
+    box-sizing:border-box;
+    
+}
+/* 注册框边框设置 */
+.input{
+    /* border:1px solid #d4d4d4; */
+    padding:15px;
+   
+    }
+/* 注册框输入框样式设置 */
+.input>input{
+    border:1px solid #D2D2D2;
+    margin:5px 0;
+    box-sizing:border-box;
+    width:240px;
+    height:42px;
+    line-height:42px;
+    text-align:left;
+    padding-left:20px;
+    border-radius:5px;
+}
+/* 注册框输入框P标签设置 */
+.bg p{
+    width:80px;
+    font-size:16px;
+    padding:10px 10px;
+    text-align: center;
+    color:red;
+    margin: 0 auto;
+    /* border:1px solid #000; */
+}
+/* 注册界面头部 p标签鼠标移入样式 */
+.bg p:hover{
+    border: 2px solid #fff;
+    background-color: #000;
+    color:#fff;
+    font-weight: 700;
+}
+/* 设置登陆按钮 */
+.btn{
+    width:100%;
+    text-align: center;
+    padding-bottom: 35px;
+    padding-top:20px;
+}
+/* 登陆按钮样式设置 */
+button{
+    font-size:20px;
+    padding: 3px 23px;
+    text-align: center;
+    background: #fff;
+    outline: none;
+    border:2px solid #686666;
+    color: #000;
+    border-radius:5px;
+}
+button:active{
+    box-sizing: border-box;
+    background: #fff;
+    border:2px solid #000;   
+}
+.btn button:hover{
+  background: -webkit-linear-gradient(top, #27b0f6 0%, #0aa1ed 100%);
+    color:#fff;
+    font-weight: 700;
+}
+/* 底部阅读样式设置 */
+.bg-top{
+    font-size: 16px;
+    padding-top: 7px;
+    text-align: center;
+}
+/* 我已经阅读并接受样式设置 */
+#agr-reg{
+    width:16px;
+    height:16px;
+    line-height:16px;
+    margin-bottom: 0;
+    vertical-align:bottom;
+}
+/* 《用户注册协议》样式设置 */
+#agr-reg+span{
+    color:#319EFF;
+}
+/* 背景图片 */
+.bg_img{
+    width:100%;
+    height: 100%;
+    position: fixed;
+    z-index: 0;
+}
+.input>span{
+  color:#fff;
+}

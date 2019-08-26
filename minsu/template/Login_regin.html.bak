@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="login_regin.css">
+    <link rel="stylesheet" href="base.css">
+    </head>
+<body>
+    <header id="header"></header>
+    <!-- 登陆界面 -->
+    <div class="login_regin">
+        <!-- <img src="2.jpg" alt=""> -->
+        <div class="login_tittle position">
+            <a href="javascript:;" class="login_tittle_a">账号密码登陆</a>
+            <a class="reg_a" href="register.html">新用户注册</a>
+        </div>
+
+        <!-- 用户账户 -->
+        <div class="login_uname clear position">
+            <span>用户账号：</span>
+            <!-- 个人用户登录账户 -->
+            <input type="text" placeholder="请输入用户名/手机号/邮箱" id="puname">
+            <span><img src="yhm.png" alt="">
+            </span>
+        </div>
+        <!-- 用户密码 -->
+        <div class="login_pwd clear position">
+            <span>用户密码：</span>
+            <!-- 个人用户登录密码 -->
+            <input type="password" placeholder="请输入您的密码" id="pupwd">
+            </span>
+
+         <span><img src="mm.png" alt=""></span>
+           
+            <p class="reg">
+              <input type="checkbox" id="zd">
+              <label for="zd">自动登录</label>
+          </p>
+            <p>
+                <a href="javascript:;">忘记密码?</a>
+            </p>
+        </div>
+        <!-- 登陆按钮 -->
+        <div class="btn position">
+            <!-- 登录按钮 -->
+            <button id="loginBtn">登 陆</button>
+        </div> 
+        <!-- =================== -->
+        <!-- 滑块验证 -->
+        <div class="sliding position" id="sliding">
+            <div class="container" >
+                <div id="captcha"></div>
+                <div id="msg"></div>
+            </div>
+            <!-- =================== -->
+        </div>
+    </div>
+    
+    <!-- 背景图片 -->
+    <div class="bg_img">
+        <img class="bg_img" src="2.jpg">
+    </div>
+    
+
+    <script src="login.js"></script>
+
+</body>
+</html>

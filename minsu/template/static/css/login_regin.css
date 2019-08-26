@@ -1,0 +1,182 @@
+/* 设置网页宽度 */
+#login{
+    width:100%;
+}
+/* 文本输入框 */
+input{
+    outline: none;
+    border: transparent;
+    padding-left:15px;
+    font-size:15px;
+    height:23px;
+    border-radius: 5px;
+}
+/* 登陆界面 */
+.login_regin{
+    background-color:rgb(3, 168, 158,0.2);
+    width:380px;
+    position:fixed;
+    display:flex;
+    flex-wrap: wrap;
+    margin-left:37%;
+    left:-300px;
+    top:31%;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.login_regin>img{
+    position: absolute;
+    z-index: 0;
+    filter: blur(15px);
+}
+.position{
+    position: relative;
+    z-index: 1;
+}
+/* 登陆界面头部 */
+.login_tittle{
+    width:100%;
+    margin-left:22px;
+    font-size:18px;
+    color: #00848a;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+/* 登陆界面头部 a标签 */
+.login_tittle a{
+    color:#fff;
+    padding-left:0;
+ 
+    text-decoration: none;
+    font-size: 18px;
+    font-size: #fff; 
+
+}
+.login_tittle>.reg_a{
+  display: inline;
+  float: right;
+  margin:0 auto;
+  color:#f00;
+  font-size: 16px;
+  margin-right: 40px;
+}
+
+.login_uname{
+    width:100%;
+    margin-bottom: 20px;
+    
+    
+}
+/* 设置登陆界面用户账号span样式 */
+.login_uname span{
+    font-weight: bold;
+    font-size: 16px;
+    margin-left:22px;
+    color: #fff;
+}
+
+/* 设置登陆界面用户账号a标签样式 */
+.login_uname a{
+    margin-top:10px;
+    color:#f00;
+    float: right;
+    margin-right:40px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.login_uname>input,.login_pwd>input{
+  padding-top:8px;
+  padding-bottom: 8px;
+  padding-right:39px;
+  padding-left:10px;
+}
+.login_uname>span>img{
+position: absolute;
+top:5px;
+right:46px;
+
+}
+.login_pwd>span>img{
+  position: absolute;
+  top:5px;
+  right:46px;
+  
+  }
+/* 设置登陆界面密码框宽度 */
+.login_pwd{
+    width:100%;
+}
+/* 设置登陆界面密码框sapn样式 */
+.login_pwd span{
+    font-weight: bold;
+    font-size: 16px;
+    margin-left:22px;
+    color: #fff;
+}
+/* 设置登陆界面密码框a标签样式 */
+.login_pwd a{
+    /* margin-top:10px; */
+    color:#f00;
+    float: right;
+    margin-right:40px;
+    margin-bottom: 20px;
+    font-size: 16px;
+
+}
+/*自动登录*/
+.reg{
+  float: left;
+  color:#f00;
+  margin-left: 35px;
+  text-align: center;
+ 
+}
+.reg>input{
+  margin:0 ;
+  vertical-align: middle;
+  padding: 0;
+  
+}
+/* 设置登陆按钮 */
+.btn{
+    width:100%;
+    text-align: center;
+    padding-bottom: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* 登陆按钮样式设置 */
+button{
+    
+    font-size:20px;
+    padding: 3px 23px;
+    text-align: center;
+    background: -webkit-linear-gradient(top, #27b0f6 0%, #0aa1ed 100%);
+    outline: none;
+    border:1px solid #0aa1ed;
+    color: #fff;
+    border-radius:5px;
+}
+#loginBtn{
+  width:100%;
+  
+}
+button:active{
+    box-sizing: border-box;
+    background: #fff;
+    border:2px solid #000;   
+}
+.btn button:hover{
+    background-color: #000;
+    color:#000;
+    font-weight: 700;
+}
+/* 背景图片 */
+.bg_img{
+    width:100%;
+    height:100%;
+    position: fixed;
+    z-index: 0;
+}
