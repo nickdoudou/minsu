@@ -222,6 +222,7 @@ section{
   padding: 16px;
   margin-top: 16px;
   margin-bottom: 32px;
+  line-height: 1.6
 }
 .house_intr div:first-child{
   color: #484848;
@@ -232,6 +233,23 @@ section{
   font-size: 16px;
   color: #008489;
   font-weight: 600
+}
+.more{
+  margin-top:20px;
+  color: #008489;
+  font-weight: 700;
+}
+.save{
+  padding: 10px 0;
+  vertical-align: middle;
+}
+.house_info div{
+  padding: 10px 0;
+}
+.send_up{
+  font-size: 16px;
+  font-weight: 700;
+  padding-right:8px;
 }
 /* 房屋介绍 */
 .room_details{
@@ -246,18 +264,29 @@ section{
   margin: 10px 0
 }
 .room_details p{
-  font-size: 14px;
+  font-size: 16px;
   color: #484848;
-
-  font-size: 14px
+}
+.huose_info div{
+padding: 14px 0;
 }
 /* 房屋设施介绍样式 */
-.house_facility{
+.facility{
   display: inline-block;
+  padding: 10px 15px;
+  text-align: center;
 }
 .comment_content_user{
   padding: 14px 0;
 }
+.content_user_top{
+  padding: 14px 0;
+}
+.content_user_top div{
+  padding-right: 14px;
+  
+}
+
 .content_user_top div a img{
   /* 评论头像样式 */
   width: 50px;
@@ -269,6 +298,33 @@ section{
   display: inline-block;
   /* 头像时间同一行显示 */
 }
+.comment_title{
+  height: 80px;
+  vertical-align: middle
+}
+.scro{
+  float: right;
+}
+.scro span:first-child{
+  color: #008489;
+  font-size: 46px;
+}
+.desc{
+  margin-top:35px;
+}
+.mark{
+  margin: 20px 30px 20px 0;
+
+}
+.mark tr td{
+  color: rgba(72, 72, 72);
+  font-size: 18px;
+  font-weight: 600;
+  padding: 25px 30px 25px 0
+}
+.mark tr td:nth-child(2){
+  padding-right:65px;
+}
 /* 评论分页 */
 .comment_paging ul{
   margin-top: 20px
@@ -276,7 +332,6 @@ section{
 .comment_paging ul>li{
   list-style: none;
   float: left;
-  display: inline-block;
   margin-right: 20px;
   text-align: center;
   width: 24px;
@@ -293,40 +348,60 @@ section{
 .order_date :first-child>h2{
   font-size: 22px;
   color: #484848;
-  font-weight: 600
+  font-weight: 600;
 }
 #calen{
-  margin-top: 10px
+  margin-top: 10px;
+  padding-left: 8px ;
 }
 /* 地理位置 */
 .localtion{
   position: relative;
+  padding: 8px;
 }
 .localtion>h2{
-  font-size: 20px;
+  font-size: 26px;
   color: #484848;
   margin:80px 0 20px 0;
   font-weight: 600
 }
 .local_info span{
+  display: block;
   color: #484848;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 700;
+  padding:20px 0;
+  line-height: 1.6;
 }
 .local_info p{
   margin:5px 0;
   color: #484848
 }
 .local_info a{
-  color: #008489;
-  font-size: 16px;
-  font-weight: 600
-}
-.notice_info>ul:first-child>li{
-  float: left;
-  margin-right: 50px;
-
+  display:inline-block;
+  padding-top:20px 0;
 }
 .notice{
 /* 增加内边距与上面内容对齐 */
-padding: 0 8px;
+padding-left: 8px;
+width: 600px;
 }
+.notice div div:nth-child(2){
+  
+}
+.notice h2{
+  font-size: 26px;
+  color: #484848;
+  display: block;
+}
+.notice_info{
+  height: 300px;
+}
+.demand{
+  margin: 10px 0;
+}
+.demand div{
+  display: inline-block;
+  padding-right:68px;
+}
+

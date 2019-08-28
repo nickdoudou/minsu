@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="static/css/base.css">
   <link rel="stylesheet" href="static/css/jingan.css">
   <link rel="stylesheet" href="static/css/date.css">
   <script src="static/js/jquery-1.11.3.js"></script>
@@ -111,8 +112,8 @@
               <p>屋内干净舒适,浪漫惬意,温一炉香,沏一壶茶,生欢喜心｡</p>
               <p>在这里,邂逅你想要的时光｡</p>
             </div>
-            <div>
-              <span>更多房源介绍</span>
+            <div class="more">
+              <span>更多房源介绍&gt</span>
             </div>
           </div>
         </div>
@@ -127,9 +128,10 @@
         </div>
         <div>
           <div class="save">
-            <div style="margin: 8px 0">
-              <div class="save_content" style="padding: 12px 0">
-                <span>爱彼迎旅行保障</span>
+            <div>
+              <div class="save_content">
+                <img src="./public/image/dun.png" alt="">
+                <span class="send_up">爱彼迎旅行保障</span>
                 <span>|</span>
                 <span>全方位保障·出行无忧</span>
               </div>
@@ -139,92 +141,101 @@
         <!-- 房源信息 -->
         <div class="house_info">
           <div>
-            <span>整套房子/公寓</span>
+            <span class="send_up">整套房子/公寓</span>
             <span>独享整个房源，无需与房东或他人共住</span>
           </div>
           <div>
-            <span>超赞房东</span>
+            <span class="send_up">超赞房东</span>
             <span>超赞房东经验丰富、评分很高，他们致力于为房客提供优质的住宿体验</span>
           </div>
           <div>
-            <span>入住/退房</span>
+            <span class="send_up">入住/退房</span>
             <span>入住时间 14:00后 · 退房时间 12:00</span>
           </div>
           <div>
-            <span>自助入住</span>
+            <span class="send_up">自助入住</span>
             <span>通过密码锁自助入住</span>
           </div>
         </div>
         <!-- 房屋设施介绍 -->
         <div class="house_facility">
           <div>
-            <div>
+            <div class="facility">
                 <div>
                   <img src="public/image/wifi.png" alt="">
                 </div>
-                <div><span>无限网络</span></div>
-              </div>
-              <div>
+                <div>
+                  <span>无限网络</span>
+                </div>
+            </div>
+            <div class="facility">
                 <div>
                   <img src="public/image/kitchen.png" alt="">
                 </div>
                 <div><span>厨房</span></div>
-              </div>
-              <div>
+            </div>
+            <div class="facility">
                 <div>
                   <img src="public/image/shampoo.png" alt="">
                 </div>
                 <div><span>洗发水</span></div>
-              </div>
+            </div>
+            <div class="facility">
               <div>
-                <div>
                   <img src="public/image/blower.png" alt="">
                 </div>
                 <div><span>吹风机</span></div>
-              </div>
-              <div>
+            </div>
+            <div class="facility">
                 <div>
                   <img src="public/image/necess.png" alt="">
                 </div>
                 <div><span>生活必需品</span></div>
-              </div>
-              <div>
-                <div><span>9+</span></div>
-                <div><a href="javascsript:;"><span>更多设施</span></a></div>
+            </div>
+            <div class="facility">
+              <div><span>9+</span></div>
+              <div><a href="javascsript:;"><span>更多设施</span></a></div>
               </div>
           </div>
         </div>
         <!-- 评论详情 -->
         <div class="comment">
-          <div class="comment_title">
-            <div><h2>评价</h2></div>
+          <div class="comment_title clear">
+            <div>
+              <h2>评价</h2>
+            </div>
             <div>
               <div>
                 <div class="comment_star">
                   <img src="public/image/fiveStar.png" alt="">
                   <input type="text" placeholder="搜索评价">
                 </div>
+                
               </div>
             </div>
+            <div class="scro ">
+                <span>5分</span>
+                <span>/5分</span>
+              </div>
           </div>
-          <div style="border-bottom: 1px solid rgba(72,72,72,.2)">
-            <table>
+          <div class="desc" style="border-bottom: 1px solid rgba(72,72,72,.2)">
+            <table class="mark">
               <tr>
-                <td style="padding: 30px 75px 12px 0">如实描述</td>
+                <td >如实描述</td>
                 <td><img src="public/image/fiveStar.png" alt=""></td>
-                <td style="padding: 0 75px 10px 70px">位置便利</td>
+                <td >位置便利</td>
                 <td><img src="public/image/fiveStar.png" alt=""></td>
               </tr>
               <tr>
-                <td style="padding: 0 30px 12px 0">沟通交流</td>
+                <td >沟通交流</td>
                 <td><img src="public/image/fiveStar.png" alt=""></td>
-                <td style="padding: 0 75px 10px 70px">入住顺利</td>
+                <td >入住顺利</td>
                 <td><img src="public/image/fiveStar.png" alt=""></td>
               </tr>
               <tr>
                 <td>干净卫生</td>
                 <td><img src="public/image/fiveStar.png" alt=""></td>
-                <td style="padding: 0 75px 10px 70px">高性价比</td>
+                <td >高性价比</td>
                 <td><img src="public/image/fiveStar.png" alt=""></td>
               </tr>
             </table>
@@ -338,7 +349,7 @@
                         <div class="comment" user="self">
                           <!-- 用户的头像 -->
                             <div class="comment-left">
-                              <img src="../img/house.jpg" alt="">
+                              <img src="./public/image/house.jpg" alt="">
                             </div>
                             <!--用户名字以及发表的言论  -->
                             <div class="comment-right">
@@ -402,32 +413,42 @@
           <p>距离环贸iapm走路十五分钟
           </p>
           <p>距离新天地思南公馆走路十五分钟</p>
-          
+          <a href="javascript:;" class="more">查看更多信息</a>
         </div>
       </div>
       <!-- 住户须知 -->
       <div class="notice">
         <h2>须知</h2>
-        <div class="notice_info">
-          <ul class="clear">
-            <li>基本要求</li>
-            <li>
+        <div class="notice_info clear ">
+          <div class="demand clear fl">
+            <div style="vertical-align: top;
+            font-size: 18px;
+            font-weight: 700;">基本要求</div>
+            <div class="">
               <p>不适合婴幼儿（2岁以内）入住</p>
               <p>禁止吸烟</p>
               <p>不允许携带宠物</p>
               <p>不允许举办派对和活动</p>
-            </li>
-          </ul>
-          <ul class="clear">
-            <li>取消政策</li>
-            <li>添加入住退房日期后，可查看取消政策详情</li>
-          </ul>
-          <ul class="clear">
-            <li>交易提示</li>
-            <li>
-              <p>若需要开具房费发票，请您与房东协商。</p>
-            </li>
-          </ul>
+              <p><a href="javascript:;" class="more" style="display: inline;">房屋守则</a></p> 
+            </div>
+          </div>
+          <div class="demand clear fl ">
+            <div style="vertical-align: top;
+            font-size: 18px;
+            font-weight: 700;">取消政策</div>
+            <div class="">
+              <p>添加入住退房日期后，可查看取消政策详情。<span class="more" style="display: inline;">添加日期</span></p>
+            </div>
+          </div>
+          <div class="demand clear  fl">
+            <div style="vertical-align: top;
+            font-size: 18px;
+            font-weight: 700;">交易提示</div>
+            <div class="">
+              <p>若需要开具房费发票，请您与房东协商。<span class="more" style="display: inline;">查看详情</span></p>
+             
+            </div>
+          </div>
         </div>
         
       </div>

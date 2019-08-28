@@ -6,7 +6,7 @@ footer{
 }
 
 .foot{
-  padding-top:100px;
+  padding-top:60px;
   display: flex;
   color:#fff;
   width: 1080px;
@@ -32,7 +32,7 @@ footer{
   border-radius: 5px;
 }
 .foot_bottom{
-  padding-top:100px;
+  padding-top:50px;
   color:#fff;
   width: 1080px;
   margin: 0 auto;
